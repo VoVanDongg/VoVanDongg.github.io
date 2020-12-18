@@ -272,8 +272,8 @@ header .nav-list .menu-container2 .menu-item:hover ul {
 }
 
 header .nn {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border: 3px solid white;
   border-radius: 50%;
   position: relative;
@@ -1108,10 +1108,7 @@ a {
   #socialise .ifhoh-info {
     font-size: 0.85em;
   }
-  .logo {
-    width: 100%;
-    margin-bottom: 4%;
-  }
+
   .email,
   .phone {
     margin: 2% 0;
