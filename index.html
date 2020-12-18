@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Magazine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="layout.css" type="text/css" />
+</head>
+
+<body>
+  <section style="background: #f9f9f9; overflow-x: hidden !important;">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/logo1.webp" alt="photo">
+        </div>
+        <div id="topbar">
+          <div id="topnav">
+            <ul class="menu-container">
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="pages/style-demo.html">Information</a>
+                <ul class="menu-drop">
+                  <li><a href="#">Corona-Virus</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Event</a></li>
+                  <li><a href="#">Videos</a></li>
+
+                </ul>
+              </li>
+              <li class="menu-item"><a href="pages/full-width.html">Member</a>
+                <ul class="menu-drop">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="#">Contributor</a>
+                <ul class="menu-drop">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last"><a href="#">More</a>
+                <ul class="menu-drop">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="search">
+            <div class="open-Search pointer" onclick="openSearch()">
+              <div style="margin-right: 5%;"><img src="images/icon_search.png" alt="icon"></div>
+              <div>Search</div>
+            </div>
+
+            <div id="search-over">
+              <span class="close-search" onclick="closeSearch()" title="Close Search">×</span>
+              <div class="search-content">
+                <form>
+                  <input type="text" placeholder="Search..." name="search">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-list">
+        <input type="checkbox" id="check" hidden>
+        <label for="check" class="nn" onclick="abc()">
+          <div class="bar"></div>
+        </label>
+        <ul class="menu-container2">
+          <li class="menu-item active"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="pages/style-demo.html">Information</a>
+            <ul class="menu-drop">
+              <li><a href="#">Corona-Virus</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Videos</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item"><a href="pages/full-width.html">Member</a>
+            <ul class="menu-drop">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Contributor</a>
+            <ul class="menu-drop">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item last"><a href="#">More</a>
+            <ul class="menu-drop">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </li>
+          <li class="search">
+            <input type="checkbox" id="searchWrite" hidden>
+            <label for="searchWrite" class="open-Search pointer">
+              <div style="margin-right: 5%;"><img src="images/icon_search.png" alt="icon"></div>
+              <div>Search</div>
+            </label>
+
+            <div id="search-over">
+              <label for="searchWrite" class="close-search" title="Close Search">×</label>
+              <div class="search-content">
+                <form>
+                  <input type="text" placeholder="Search..." name="search">
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+
+    <!-- ############################################## News ######################################################### -->
+    <div class="wrapper news">
+      <div class="container container-news">
+        <div class="slider-content">
+          <div class="slideshows">
+            <ul id=" ">
+              <li class="mySlides fade"><img src="images/new-img_1.jfif" alt="photo" />
+                <div class="panel-overlay">
+                  <h2>Nullamlacus dui ipsum</h2>
+                  <p>Temperinte interdum sempus odio urna eget curabitur semper convallis nunc laoreet.<br />
+                    <a href="#">Continue Reading &raquo;</a>
+                  </p>
+                </div>
+              </li>
+              <li class="mySlides fade"><img src="images/new-img_2.jfif" alt="photo" />
+                <div class="panel-overlay">
+                  <h2>Aliquatjusto quisque nam</h2>
+                  <p>Temperinte interdum sempus odio urna eget curabitur semper convallis nunc laoreet.<br />
+                    <a href="#">Continue Reading &raquo;</a>
+                  </p>
+                </div>
+              </li>
+              <li class="mySlides fade"><img src="images/new-img_3.jfif" alt="photo" />
+                <div class="panel-overlay">
+                  <h2>Dapiensociis temper donec</h2>
+                  <p>Temperinte interdum sempus odio urna eget curabitur semper convallis nunc laoreet.<br />
+                    <a href="#">Continue Reading &raquo;</a>
+                  </p>
+                </div>
+              </li>
+              <li class="mySlides fade"><img src="images/new-img_1.jfif" alt="photo" />
+                <div class="panel-overlay">
+                  <h2>Semvelit nonummy odio tempus</h2>
+                  <p>Justolacus eger at pede felit in dictum sempus elit curabitur ipsum. Ametpellentum.<br />
+                    <a href="#">Continue Reading &raquo;</a>
+                  </p>
+                </div>
+              </li>
+              <li class="mySlides fade"><img src="images/new-img_2.jfif" alt="photo" />
+                <div class="panel-overlay">
+                  <h2>Pedefamet orci orci quisque</h2>
+                  <p>Nonnam aenenasce morbi liberos malesuada risus id donec volutpat estibulum curabitae.<br />
+                    <a href="#">Continue Reading &raquo;</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <a class="prev center" onclick="plusSlides(-1)"><img src="images/prev.gif" alt=""></a>
+
+            <div class="column-slider">
+              <img class="new cursor" src="images/new-img_1.jfif" style="width:100%; height: 100%;"
+                onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column-slider">
+              <img class="new cursor" src="images/new-img_2.jfif" style="width:100%; height: 100%;"
+                onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column-slider">
+              <img class="new cursor" src="images/new-img_3.jfif" style="width:100%; height: 100%;"
+                onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column-slider">
+              <img class="new cursor" src="images/new-img_1.jfif" style="width:100%; height: 100%;"
+                onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column-slider">
+              <img class="new cursor" src="images/new-img_2.jfif" style="width:100%; height: 100%;"
+                onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+
+            <a class="next center" onclick="plusSlides(1)"><img src="images/next.gif" alt=""></a>
+          </div>
+        </div>
+
+
+
+
+        <div class="column">
+          <div class="column-title">
+            <p>Latest News</p>
+            <a href="" style="color: #c40202d1;">See all &raquo;</a>
+          </div>
+          <ul class="latestnews">
+            <li style="padding-top: 0;">
+              <div class="img-new">
+                <img src="images/new-img_4.jpg" alt="photo" />
+              </div>
+
+              <p>
+                <strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque loborttis non
+                euis que morbi penas dapibulum orna.
+                orna.
+
+              </p>
+            </li>
+            <li>
+              <div class="img-new">
+                <img src="images/new-img_5.jpg" alt="photo" />
+              </div>
+
+              <p>
+                <strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque loborttis non
+                euis que morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque.
+
+              </p>
+            </li>
+            <li class="last">
+              <div class="img-new">
+                <img src="images/new-img_6.jpg" alt="photo" />
+              </div>
+
+              <p>
+                <strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque loborttis non
+                euis que morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque.
+
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ############################################## About ######################################################### -->
+    <div class="wrapper about">
+      <div id="hpage_cats">
+        <div class="cl_left">
+          <div class="item-left">
+            <h2><a href="#">Videos &raquo;</a></h2>
+            <div class="item-left_content">
+              <div class="video">
+                <iframe style="border-radius: 10px;" height="100%" width="100%"
+                  src="https://www.youtube.com/embed/Iw9rKhL8qtk" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+
+              </div>
+              <div>
+                <p><strong><a href="#">Indonectetus facilis leo.</a></strong></p>
+                <p>
+                  This is a W3C standards compliant free website template from <a href=""></a>OS
+                  Templates</a>. For more CSS templates visit <a href=" ">Morbitincidunt maurisque</a>. Condimentumfelis
+                  et amet tellent quisquet a leo lacus nec augue accumsan
+                  sagittislaorem
+                  dolor
+                  sum at urna.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-left">
+            <h2><a href="#">Journal &raquo;</a></h2>
+            <div class="item-left_content">
+              <div class="img-item-left_content">
+                <img src="images/PDF-Logo.png" alt="photo" />
+              </div>
+
+              <div>
+                <p><strong><a href="#">Indonectetus facilis leo.</a></strong></p>
+                <p>
+                  Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. <a href="">Anterdumnullam
+                    interdum
+                    eros</a>
+                  dui
+                  urna consequam ac nisl nullam ligula vestassa. Condimentumfelis et amet tellent quisquet a leo lacus
+                  nec
+                  augue
+                  accumsan sagittislaorem dolor sum at urna.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cl_right">
+          <div class="item-right">
+            <h2><a href="#">Position Papers &raquo;</a></h2>
+            <div class="item-right_content">
+              <div class="img-item-right_content">
+                <img src="images/pdf.png" alt="photo" />
+              </div>
+
+              <div>
+                <p><strong><a href="#">Indonectetus facilis leo.</a></strong></p>
+                <p>
+                  This template is distributed using a Website
+                  Template
+                  Licence, which allows you to use and modify the template for both personal and commercial use
+                  when
+                  you
+                  keep the provided credit links in the footer.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <h2><a href="#">Brochures &raquo;</a></h2>
+            <div class="item-right_content">
+              <div class="img-item-right_content">
+                <img src="images/brochures.png" alt="photo" />
+              </div>
+
+              <div>
+                <p><strong><a href="#">Indonectetus facilis leo.</a></strong></p>
+                <p>
+                  Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anterdumnullam interdum
+                  eros
+                  dui
+                  urna consequam ac nisl nullam ligula vestassa. Condimentumfelis et amet tellent quisquet a leo lacus
+                  nec
+                  augue
+                  accumsan sagittislaorem dolor sum at urna.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ################################################ Event ####################################################### -->
+    <div class="wrapper event">
+      <div class="container container-event">
+        <div class="content">
+          <div id="hpage_latest">
+            <h2>Events</h2>
+            <ul>
+              <li>
+                <div class="img-event">
+                  <img src="images/event1.jpg" alt="photo" />
+                </div>
+
+                <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.
+                  Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et...</p>
+                <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+              </li>
+              <li>
+                <div class="img-event">
+                  <img src="images/event2.jpg" alt="photo" />
+                </div>
+
+                <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.
+                  Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et...</p>
+                <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+              </li>
+              <li class="last">
+                <div class="img-event">
+                  <img src="images/event3.jpg" alt="photo" />
+                </div>
+
+                <p>
+                  Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.
+                  Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et...</p>
+                <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="holder">
+            <iframe style="border-radius: 10px;" height="100%" width="100%"
+              src="https://www.youtube.com/embed/a8K3kHFS10Q" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+          <div class="holder">
+            <iframe style="border-radius: 10px;" height="100%" width="100%"
+              src="https://www.youtube.com/embed/XqAoZSkHGH4" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="readmore" style="text-align: right;  font-size: 18px;  font-weight: 700;  margin: 0;"><a href="#">
+              See
+              all &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper donors">
+      <div class="donors-contents">
+        <div class="donors-title">
+          <span>Our sponsor</span>
+        </div>
+
+        <div id="donors-container">
+          <div class="donorbox pointer">
+            <div class="donorbox-item">
+              <div class="donorbox-front">
+                <img style="width: 100%" src="images/logo-amplifon.jpg" alt="photo">
+              </div>
+              <div class="donorbox-back">
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis ipsa pariatur, optio exercitationem labore recusandae debitis,
+                    voluptate perspiciatis quo ex nulla.
+                    Eos repellendus doloremque optio delectus laboriosam architecto natus aut!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="donorbox pointer">
+            <div class="donorbox-item">
+              <div class="donorbox-front">
+                <img style="width: 100%" src="images/avantor.jpg_large" alt="photo">
+              </div>
+              <div class="donorbox-back">
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis ipsa pariatur, optio exercitationem labore recusandae debitis,
+                    voluptate perspiciatis quo ex nulla.
+                    Eos repellendus doloremque optio delectus laboriosam architecto natus aut!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="donorbox pointer">
+            <div class="donorbox-item">
+              <div class="donorbox-front">
+                <img style="width: 100%" src="images/avantor.jpg_large" alt="photo">
+              </div>
+              <div class="donorbox-back">
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis ipsa pariatur, optio exercitationem labore recusandae debitis,
+                    voluptate perspiciatis quo ex nulla.
+                    Eos repellendus doloremque optio delectus laboriosam architecto natus aut!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="donorbox pointer">
+            <div class="donorbox-item">
+              <div class="donorbox-front">
+                <img style="width: 100%" src="images/Cochlear-Americas-Logo.jpg" alt="photo">
+              </div>
+              <div class="donorbox-back">
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis ipsa pariatur, optio exercitationem labore recusandae debitis,
+                    voluptate perspiciatis quo ex nulla.
+                    Eos repellendus doloremque optio delectus laboriosam architecto natus aut!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper" style="background: #2999f9; margin: 0;">
+      <div id="socialise">
+        <div class="ifhoh-info">
+          <div class="logo" style="width: 100%; margin-bottom: 1%;">
+            <img src="images/logo1.webp" alt="photo">
+          </div>
+          <p class="" style="font-weight: 700;">IFHOH - International Federation of Hard of Hearing People</p>
+          <p class="email">
+            <i class="fas fa-envelope-square"></i>
+            <a target="_blank" href=" ">info@ifhof.org</a>
+          </p>
+          <div class="phone">
+            <i class="fas fa-phone-square-alt"></i>
+            <span> 0899616939 </span>
+          </div>
+        </div>
+
+        <div class="social-network">
+          <p style="margin-bottom: 4%;  margin-top: 0; font-weight: 700;">Connected with us</p>
+          <ul>
+            <li><a href="#"><img src="images/facebook-logo.jpg" alt="logo" /><span>Facebook</span></a>
+            </li>
+            <li><a href="#"><img src="images/youtube-logo-illustration.jpg" alt="logo" /><span>YouTube</span></a></li>
+            <li class="last"><a href="#"><img src="images/logo-twitter.png" alt="logo" /><span>Twitter</span></a></li>
+          </ul>
+        </div>
+
+        <div id="newsletter">
+          <h2>NewsLetter Sign Up !</h2>
+          <p>Please enter your Email and Name to join!</p>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Digital Newsletter</legend>
+              <div class="write-leter">
+                <input style="margin-bottom: 5%;" type="text" name="" id="" placeholder="Enter name here..." />
+                <input type="text" name="" id="" placeholder="Enter email address...">
+              </div>
+            </fieldset>
+          </form>
+          <div class="sent-leter">
+            <div class="submit pointer">
+              <button class="pointer">Submit</button>
+            </div>
+            <p>To unsubsribe please <a href="#" style="color: #c40202d1;  font-weight: 600;">click here &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("new");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+
+
+  function openSearch() {
+    document.querySelector("#search-over").style.display = "block";
+  }
+  function closeSearch() {
+    if (document.querySelector("#search-over").style.display === "none") {
+      document.querySelector("#search-over").style.display = "block";
+
+    }
+
+    else {
+      document.querySelector("#search-over").style.display = "none";
+
+    }
+
+  }
+</script>

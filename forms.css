@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  border: none;
+  align-items: center;
+  display: flex;
+}
+legend {
+  display: none;
+}
+input,
+textarea,
+select {
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* ::placeholder {
+  color: white;
+} */
+
+/* ----------------------------------------------Newsletter------------------------------------- */
+
+#socialise form {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 2% 0 0 0;
+  border: none;
+}
+#socialise input {
+  padding: 3%;
+  background-color: #2684b7;
+  border: 1px solid #1c5e82;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: white;
+  border-radius: 10px;
+}
+#socialise input#newsletter_go {
+  width: 58px;
+  height: 62px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.write-leter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.sent-leter {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit {
+  width: 25%;
+}
+.submit button {
+  color: white;
+  font-size: 1.2em;
+  background-color: #2684b7;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10% 0;
+}
